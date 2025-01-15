@@ -8,4 +8,17 @@ valgrind --leak-check=full \
          --log-file=valgrind-out.txt \
 	 ./minishell
 
+readline.supp
 
+{ 
+    leak readline
+    Memcheck:Leak
+    ...
+    fun:readline
+}
+{
+    leak add_history
+    Memcheck:Leak
+    ...
+    fun:add_history
+}
