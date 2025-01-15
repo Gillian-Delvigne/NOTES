@@ -21,6 +21,8 @@ minibash1.0$ rm -rf ../../d1
 minibash1.0$ cd ..
 
 -----------------------------------------------------------
+apt search valgrind
+apt-cache valgrind
 
 valgrind --leak-check=full \
          --show-leak-kinds=all \
